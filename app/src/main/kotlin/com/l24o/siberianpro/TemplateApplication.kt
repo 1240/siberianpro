@@ -1,9 +1,10 @@
 package com.l24o.siberianpro
 
 import android.app.Application
+import com.l24o.siberianpro.di.AppComponent
+import com.l24o.siberianpro.di.DaggerAppComponent
 import com.l24o.siberianpro.di.modules.AppModule
-import com.l24o.stels.di.AppComponent
-import com.l24o.stels.di.DaggerAppComponent
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 
 class TemplateApplication : Application() {
 
@@ -16,5 +17,11 @@ class TemplateApplication : Application() {
         appComponent = DaggerAppComponent.builder()
                 .appModule(AppModule(this))
                 .build()
+
+        CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
+                .setDefaultFontPath("fonts/Roboto-Light.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build()
+        )
     }
 }

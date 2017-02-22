@@ -3,8 +3,8 @@ package com.l24o.siberianpro.common.mvp
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.l24o.siberianpro.TemplateApplication
-import com.l24o.stels.common.mvp.IView
-import com.l24o.stels.di.AppComponent
+import com.l24o.siberianpro.di.AppComponent
+import com.l24o.siberianpro.common.mvp.IView
 import org.jetbrains.anko.toast
 
 abstract class MvpActivity: AppCompatActivity(), IView {

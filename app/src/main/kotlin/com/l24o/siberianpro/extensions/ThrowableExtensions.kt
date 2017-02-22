@@ -1,4 +1,4 @@
-package com.l24o.stels.extensions
+package com.l24o.siberianpro.extensions
 
 import org.json.JSONObject
 import retrofit2.adapter.rxjava.HttpException

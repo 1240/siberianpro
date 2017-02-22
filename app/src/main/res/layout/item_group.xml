@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/group_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/groupName"
+        android:textColor="@color/itemGroupTextColor"
+        android:paddingLeft="36dp"
+        android:paddingStart="36dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        fontPath="fonts/Roboto-Light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -9,4 +9,9 @@
     <color name="colorOrangeDark">#AA5A36</color>
     <color name="colorRedFailure">#e85451</color>
     <color name="colorYellow">#f7d02e</color>
+    <color name="itemChildTextColor">#333333</color>
+    <color name="itemGroupTextColor">#333333</color>
+    <color name="itemPressedBackgroundColor">#bababa</color>
+    <color name="itemGroupBackgroundColor">#ffffff</color>
+    <color name="itemItemBackgroundColor">#eeeeee</color>
 </resources>

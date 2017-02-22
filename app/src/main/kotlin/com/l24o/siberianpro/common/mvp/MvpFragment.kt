@@ -1,9 +1,9 @@
-package com.l24o.stels.common.mvp
+package com.l24o.siberianpro.common.mvp
 
 import android.app.Fragment
 import android.os.Bundle
 import com.l24o.siberianpro.TemplateApplication
-import com.l24o.stels.di.AppComponent
+import com.l24o.siberianpro.di.AppComponent
 import org.jetbrains.anko.toast
 
 

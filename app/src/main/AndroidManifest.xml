@@ -15,9 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.l24o.siberianpro.modules.signin.SignInActivity"
-            android:theme="@style/Theme.Login.Screen"
-            android:screenOrientation="portrait">
+            android:name="com.l24o.siberianpro.modules.products.ProductsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

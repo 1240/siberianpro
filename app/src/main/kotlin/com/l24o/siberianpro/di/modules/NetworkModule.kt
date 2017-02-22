@@ -4,9 +4,7 @@ import com.google.gson.Gson
 import com.l24o.siberianpro.Constants
 import com.l24o.siberianpro.data.rest.AuthProvider
 import com.l24o.siberianpro.data.rest.TemplateInterceptor
-import com.l24o.siberianpro.data.rest.datasource.AuthDataSource
-import com.l24o.siberianpro.data.rest.datasource.ConductorDataSource
-import com.l24o.siberianpro.data.rest.datasource.RegistrarDataSource
+import com.l24o.siberianpro.data.rest.datasource.ProductDataSource
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -62,46 +60,7 @@ class NetworkModule {
 
     @Provides
     @Singleton
-    @Named("registrar")
-    fun provideRegistrarRetrofitAdapter(client: OkHttpClient, gson: Gson): Retrofit {
-        val adapter = Retrofit.Builder()
-                .baseUrl(Constants.API_REGISTRAR_ENDPOINT_URL)
-                .client(client)
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                .addConverterFactory(GsonConverterFactory.create(gson))
-                .build()
-
-        return adapter
-    }
-    @Provides
-    @Singleton
-    @Named("conductor")
-    fun provideConductorRetrofitAdapter(client: OkHttpClient, gson: Gson): Retrofit {
-        val adapter = Retrofit.Builder()
-                .baseUrl(Constants.API_REGISTRAR_ENDPOINT_URL)
-                .client(client)
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                .addConverterFactory(GsonConverterFactory.create(gson))
-                .build()
-
-        return adapter
-    }
-
-    @Provides
-    @Singleton
-    fun provideAuthDataSource(@Named("default") retrofit: Retrofit): AuthDataSource {
-        return retrofit.create(AuthDataSource::class.java)
-    }
-
-    @Provides
-    @Singleton
-    fun provideRegistrarDataSource(@Named("registrar") retrofit: Retrofit): RegistrarDataSource {
-        return retrofit.create(RegistrarDataSource::class.java)
-    }
-
-    @Provides
-    @Singleton
-    fun provideConductorDataSource(@Named("conductor") retrofit: Retrofit): ConductorDataSource {
-        return retrofit.create(ConductorDataSource::class.java)
+    fun provideProductDataSource(@Named("default") retrofit: Retrofit): ProductDataSource {
+        return retrofit.create(ProductDataSource::class.java)
     }
 }

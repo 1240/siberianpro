@@ -1,4 +1,4 @@
-package com.l24o.stels.common.mvp
+package com.l24o.siberianpro.common.mvp
 
 import com.l24o.siberianpro.TemplateApplication
 
