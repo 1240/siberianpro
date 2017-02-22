@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Template</string>
+    <string name="ok">Ok</string>
+    <string name="sigin_in_button_text">Войти</string>
+    <string name="sign_in_login_hint">Логин</string>
+    <string name="sign_in_password_hint">Пароль</string>
+    <string name="sign_in_forgot_password_text">Забыли пароль?</string>
+</resources>
